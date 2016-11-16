@@ -202,7 +202,7 @@
             {
               "type": "ImageChange",
               "imageChangeParams": {
-                "automatic": false,
+                "automatic": true,
                 "containerNames": [
                   "nodejs-mongodb-example"
                 ],
@@ -325,7 +325,7 @@
             {
               "type": "ImageChange",
               "imageChangeParams": {
-                "automatic": false,
+                "automatic": true,
                 "containerNames": [
                   "nodejs-mongodb-example"
                 ],
