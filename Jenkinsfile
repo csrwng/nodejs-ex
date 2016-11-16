@@ -6,7 +6,7 @@ node {
   if (blueWeight == "100") {
     tag = "green"
   }
-  sh "oc get route ${tag}-nodejs-mongodb-example -o jsonpath='{ spec.host }' > routehost"
+  sh "oc get route ${tag}-nodejs-mongodb-example -n $PROJECT_NAME -o jsonpath='{ .spec.host }' > routehost"
   routeHost = readFile('routehost').trim()
   echo "building tag ${tag}"
 
