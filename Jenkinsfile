@@ -19,7 +19,7 @@ node {
 }
 
 stage 'Test'
-input "Test deployment available.\nhttp://${routeHost}\nDo you approve?"
+input "Test deployment available. Do you approve?"
 
 stage 'Go Live'
 node {
