@@ -13,6 +13,20 @@
     "morgan": "^1.7.0",
     "object-assign":"4.1.0"
   },
+  "nexe": {
+      "input": "server.js",
+      "output": "demoapp",
+      "temp": "src",
+      "browserify": {
+	  "requires": [],
+	  "excludes": ["mongodb"],
+	  "paths": []
+      },
+      "runtime": {
+	  "framework": "node",
+	  "ignoreFlags": true
+      }
+  },
   "engine": {
     "node": "*",
     "npm": "*"
